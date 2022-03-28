@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 public class SimpleVoiceChatCompat {
     public static void createButton(ArrayList<Button> buttons, int width, int height) {
-        buttons.add(new Button((width/2) - 25, height/2 + 20, 70+ Minecraft.getInstance().font.width("Simple Voice Chat Settings"), 20, new TranslatableComponent("Simple Voice Chat Settings"), (button) -> {
+        buttons.add(new Button((width/2) - 25, height/2 + 40, 70+ Minecraft.getInstance().font.width("Simple Voice Chat Settings"), 20, new TranslatableComponent("Simple Voice Chat Settings"), (button) -> {
             Minecraft.getInstance().setScreen(new VoiceChatScreen());
         }));
     }

@@ -27,6 +27,9 @@ public class QuickMenu extends Screen {
         if (FabricLoader.getInstance().isModLoaded("voicechat")) {
             SimpleVoiceChatCompat.createButton(QuickMenuButtons, this.width, this.height);
         }
+        QuickMenuButtons.add(new Button((this.width/2) - 25, this.height/2 + 20, 70, 20, new TranslatableComponent("Toggle F3 Menu"), (button ) -> {
+            Minecraft.getInstance().options.renderDebug = !Minecraft.getInstance().options.renderDebug;
+        }));
 
         for (int i = 0; i < QuickMenuButtons.size(); i++) {
             Button QuickMenuButton = QuickMenuButtons.get(i);
