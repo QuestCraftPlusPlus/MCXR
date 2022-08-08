@@ -45,7 +45,6 @@ public class VanillaGameplayActionSet extends ActionSet {
     public final HapticAction leftHaptic = new HapticAction("left_haptic");
     public final HapticAction rightHaptic = new HapticAction("right_haptic");
 
-
     // public final MultiHapticAction haptics = new MultiHapticAction("haptics", new String[]{"/user/hand/left", "/user/hand/right"});
 
     public boolean turnActivated = false;
@@ -116,11 +115,9 @@ public class VanillaGameplayActionSet extends ActionSet {
                         new Pair<>(inventory, "/user/hand/left/input/y/click"),
                         new Pair<>(jump, "/user/hand/right/input/a/click"),
 
-                        // new Pair<>(sprint, "/user/hand/left/input/thumbstick/click"),
-                        new Pair<>(sneakAnalog, "/user/hand/right/input/thumbstick/y"),
-                        new Pair<>(sprintAnalog, "/user/hand/right/input/thumbstick/y"),
-                        new Pair<>(swapHands, "/user/hand/left/input/thumbstick/click"),
-                        // new Pair<>(sneak, "/user/hand/right/input/thumbstick/click"),
+                        new Pair<>(sprint, "/user/hand/left/input/thumbstick/click"),
+                        new Pair<>(sneak, "/user/hand/right/input/thumbstick/click"),
+                        // new Pair<>(swapHands, "/user/hand/left/input/thumbstick/click"), 
                         new Pair<>(quickmenu, "/user/hand/right/input/b/click"),
                         new Pair<>(menu, "/user/hand/left/input/menu/click"),
                         new Pair<>(teleport, "/user/hand/left/input/x/click"),
